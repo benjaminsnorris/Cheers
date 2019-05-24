@@ -50,6 +50,9 @@ public struct Config {
 
   /// Customize the cells
   public var customize: (([CAEmitterCell]) -> Void)?
+    
+  /// Render mode for emitter. Defaults to `CAEmitterLayerRenderMode.additive`.
+  public var renderMode = CAEmitterLayerRenderMode.additive
 
   public init() {
     

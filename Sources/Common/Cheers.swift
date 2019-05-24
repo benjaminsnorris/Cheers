@@ -39,7 +39,7 @@ open class CheerView: UIView {
     emitter.emitterPosition = CGPoint(x: bounds.width / 2, y: yOrigin)
     emitter.emitterShape = CAEmitterLayerEmitterShape.line
     emitter.emitterSize = CGSize(width: bounds.width, height: 1)
-    emitter.renderMode = CAEmitterLayerRenderMode.additive
+    emitter.renderMode = config.renderMode
 
     // This combination will ensure that all color/image combinations are evenly distributed.
     // For example, if you have only one color, then we still want to make sure
